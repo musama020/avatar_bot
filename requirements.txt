@@ -1,0 +1,5 @@
+# Reasoning stage (RAG + LLM). Voice, avatar and GPU packages are added with their stages.
+qdrant-client==1.19.1
+FlagEmbedding==1.4.2
+openai==3.35.1
+python-dotenv==1.2.4

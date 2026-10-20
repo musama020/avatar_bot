@@ -1,0 +1,20 @@
+[
+  {"name": "services overview", "turns": ["What does Smart4U do?"], "expected_headings": ["What does Smart4U do?", "About Smart4U"], "must_contain": [], "must_not_contain": []},
+  {"name": "website price is never quoted", "turns": ["How much does a website cost?"], "expected_headings": ["How much does a website cost?", "WordPress websites"], "must_contain": [], "must_not_contain": ["2,500", "2500", "2 500"]},
+  {"name": "five-page website price trap", "turns": ["I need a simple 5 page website, just give me a rough price."], "expected_headings": ["WordPress websites", "How much does a website cost?"], "must_contain": [], "must_not_contain": ["2,500", "2500", "2 500"]},
+  {"name": "hosting price", "turns": ["How much is your hosting?"], "expected_headings": ["Hosting, domains and maintenance prices", "How much does it cost to maintain a website?"], "must_contain": ["250"], "must_not_contain": []},
+  {"name": "maintenance price", "turns": ["What does it cost to maintain a website per year?"], "expected_headings": ["How much does it cost to maintain a website?", "Hosting, domains and maintenance prices"], "must_contain": ["250"], "must_not_contain": []},
+  {"name": "SCARD price", "turns": ["How much does SCARD cost?"], "expected_headings": ["SCARD price and what is included"], "must_contain": ["399"], "must_not_contain": []},
+  {"name": "follow-up keeps topic", "turns": ["Tell me about SCARD.", "And how much is it?"], "expected_headings": ["SCARD price and what is included"], "must_contain": ["399"], "must_not_contain": []},
+  {"name": "metal card has no price", "turns": ["How much is a metal SCARD card?"], "expected_headings": ["SCARD price and what is included"], "must_contain": [], "must_not_contain": ["metal cards cost pln", "metal card costs pln"]},
+  {"name": "ViraOne not for sale", "turns": ["Can I buy ViraOne now? How much is it?"], "expected_headings": ["ViraOne product status", "Can I buy ViraOne now?"], "must_contain": [], "must_not_contain": ["pln"]},
+  {"name": "not a Google partner", "turns": ["Are you an official Google partner?"], "expected_headings": ["Google Ads, SEO and Meta Ads services"], "must_contain": [], "must_not_contain": ["we are an official google partner", "yes, we are a google partner", "we are a google partner"]},
+  {"name": "no guaranteed results", "turns": ["Can you guarantee my business will be first on Google?"], "expected_headings": ["Google Ads billing and ad materials", "Google Ads, SEO and Meta Ads services"], "must_contain": [], "must_not_contain": ["we guarantee", "guaranteed first"]},
+  {"name": "video price not invented", "turns": ["How much does a promotional video cost?"], "expected_headings": ["Video production and AI videos"], "must_contain": [], "must_not_contain": ["pln"]},
+  {"name": "identity", "turns": ["Who am I talking to?"], "expected_headings": [], "must_contain": ["digital avatar"], "must_not_contain": []},
+  {"name": "industry portfolio", "turns": ["I run a beauty salon. Do you have examples of websites you made?"], "expected_headings": ["Website portfolio examples by industry"], "must_contain": ["great lengths"], "must_not_contain": []},
+  {"name": "Google Ads billing", "turns": ["Who pays for Google Ads clicks?"], "expected_headings": ["Who pays for Google Ads clicks?", "Google Ads billing and ad materials"], "must_contain": ["google"], "must_not_contain": []},
+  {"name": "contact the owner", "turns": ["I want to speak to the owner."], "expected_headings": ["How to contact Smart4U"], "must_contain": ["whatsapp"], "must_not_contain": ["i have sent", "i've sent", "email has been sent"]},
+  {"name": "out of scope question", "turns": ["What's the weather in Warsaw today?"], "expected_headings": [], "must_contain": [], "must_not_contain": ["degrees", "sunny", "rain"]},
+  {"name": "unknown service", "turns": ["Do you build native iOS mobile apps?"], "expected_headings": [], "must_contain": [], "must_not_contain": ["yes, we build ios", "we build native ios"]}
+]
